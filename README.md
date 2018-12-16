@@ -8,10 +8,10 @@ A simple website with responsive web design and basic CRUD operations.
   
 
 # Screenshots
-![Home Screen]()
-![User cart]()
-![Login]()
-![Signup]()
+![Home Screen](https://github.com/nishat0403/responsive-web-design-sample/blob/master/demo/home.png)
+![User cart](https://github.com/nishat0403/responsive-web-design-sample/blob/master/demo/profile.png)
+![Login](https://github.com/nishat0403/responsive-web-design-sample/blob/master/demo/login.png)
+![Signup](https://github.com/nishat0403/responsive-web-design-sample/blob/master/demo/signup.png)
 
 # Features!
 
@@ -22,7 +22,7 @@ A simple website with responsive web design and basic CRUD operations.
   - Video Background
   - Send feedbacks
 
-For full description refer [this]() file.
+For full description refer [this](https://github.com/nishat0403/responsive-web-design-sample/blob/master/reference.pdf) file.
 
 # Tech
 
