@@ -1,0 +1,100 @@
+<html>
+
+	<head>
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Nishat Sayyed">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="animate.css">
+	</head>
+
+	<body>
+
+		<div class="background-container">
+			<video id="video-background" preload="auto"
+			autoplay="true" loop="loop" muted="muted">
+				<source src="walk.mp4" type="video/mp4">
+					Video not supported
+			</video>
+		</div>
+		<div class="content">
+			<header class="animated fadeInDown">
+				<div class="container">
+					<div id="branding">
+						<h1><span class="hightlight">NMS</span> Web Design</h1>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a>
+							</li>
+							<li><a href="about.html">About</a>
+							</li>
+							<li><a href="services.html">Services</a>
+							</li>
+							<li class="current"><a href="login.html">Login</a>
+							</li>
+							<li><a href="signup.html">Signup</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="container_login animated fadeIn">
+				<form id="form" action="login_process.php" method="POST">
+					<img src="login.png">
+					<div>
+						<input id="user" name="email" type="text" placeholder="Enter email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="This is not a valid email ID" required>
+					</div>
+					<div class="form_input">
+						<input id="password" type="password" name="password" placeholder="Enter Password" required>
+					</div>
+
+					<div>
+						<input class="loginButton" type="submit"
+						name="login" value="LOGIN">
+						<br>
+					</div>
+
+					<div id="iconTray">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+
+					<a href="#" id="forgot">Forgot Password?</a>
+					<span class="or">OR</span>
+					<br>
+					<div class="create" onclick="location.href='signup.html';">
+						Create a new account
+					</div>
+				</form>
+			</div>
+			<div id="forgotBox" class="forgot-box">
+
+			  <div class="forgot-box-content animated zoomIn">
+				<form method="post" action="forgot_password_process.php">
+					<div class="row">
+						<label for="forgot-email">Enter email</label>
+						<input name="email" type="email" id="forgot-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="This is not a valid email ID" required>
+					</div>
+					<div class="row">
+						<label for="mobile">Enter mobile no</label>
+						<input name="mobileNo" type="tel" id="forgot-mobile" pattern="(\+91-|\+91|0)?\d{10}$" title="This is not a valid mobile number" required>
+					</div>
+					<button type="submit" class="submit-forgot">Submit</button>
+					<button class="close" type="button">Close</button>
+				</form>
+			  </div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

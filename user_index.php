@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Nishat Sayyed">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine" rel="stylesheet">
+		<link rel="stylesheet" href="animate.css">
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+	
+		<?php
+			session_start();
+			$firstName = $_SESSION['firstName'];
+			$lastName = $_SESSION['lastName'];
+			$email = $_SESSION['email'];
+		?>
+
+		<div class="background-container">
+			<video id="video-background" preload="auto"
+			autoplay="true" loop="loop" muted="muted">
+				<source src="tab.mp4" type="video/mp4">
+					Video not supported
+			</video>
+		</div>
+
+		<div class="content">
+			<header class="animated fadeInDown">
+				<div class="container">
+					<div id="branding">
+						<h1><span class="hightlight">NMS</span> Web Design</h1>
+					</div>
+					<nav>
+						<ul>
+							<li class="current"><a href="user_index.php">Home</a>
+							</li>
+							<li><a href="user_about.php">About</a>
+							</li>
+							<li><a href="user_services.php">Services</a>
+							</li>
+							<li><a href="profile.php">My account</a>
+							</li>
+							<li><a href="login.html">Logout</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<section id="banner">
+				<div class="container">
+					<h1 class="animated fadeInDown">Hello <?php echo $firstName." ".$lastName?><br>We are happy to have you here</h1>
+					<p class="animated fadeInDown">We here at Nishat's Web Design build and teach you how to build the perfect and
+						professional web designs. Here we teach you how to structure, style, build, host,
+						maintain and design professional and high quality responsive and material design websites.<br>
+						We welcome you to join your journey with us. Good Luck.. :)</p>
+				</div>
+			</section>
+
+			<section id="newsletter" class="animated fadeInDown">
+				<div class="container">
+					<h1>Subscribe to our newsletter</h1>
+					<form>
+						<input type="email" value="<?php echo $email?>" placeholder="Enter email id" disabled>
+						<button type="submit">Subscribe</button>
+					</form>
+				</div>
+			</section>
+			<section id="boxes">
+				<div class="container">
+					<div class="box animated zoomInLeft">
+						<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png">
+						<h3>HTML5</h3>
+						<p>HTML5. HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard. ... HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML.HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages. It's actually three kinds of code: HTML, which provides the structure; Cascading Style Sheets (CSS), which take care of presentation; and JavaScript, which makes things happen.On 28 October 2014, HTML5 was released as a stable W3C Recommendation, bringing the specification process to completion. According to the plan proposed by the W3C in September 2012, the HTML 5.1 specification Recommendation will be targeted for the end of 2016.</p>
+					</div>
+					<div class="box animated zoomInDown">
+						<img src="http://vignette2.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035">
+						<h3>CSS3</h3>
+						<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. The style definitions are normally saved in external .css files.With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+					</div>
+					<div class="box animated zoomInRight">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png">
+						<h3>Javascript</h3>
+						<p>JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production; the majority of websites employ it, and all modern Web browsers support it without the need for plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles. It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded. Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two are distinct languages and differ greatly in their design. JavaScript was influenced by programming languages such as Self and Scheme.</p>
+					</div>
+				</div>
+			</section>
+			<footer class="animated fadeInUp">
+				<p>NMS, Copyright &copy; 2017</p>
+			</footer>
+		</div>
+	</body>
+
+</html>
